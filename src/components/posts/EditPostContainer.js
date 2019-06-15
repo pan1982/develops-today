@@ -30,7 +30,10 @@ function EditPostContainer(props) {
   return edited || created ? (
     <Redirect to={created ? '/latest-posts' : `/post/${post.id}`} />
   ) : (
-    <EditPost post={!params.postId ? undefined : post} editPost={!params.postId ? newPost : updatePost} />
+    <EditPost
+      post={!params.postId ? undefined : post}
+      editPost={!params.postId ? newPost : updatePost}
+    />
   );
 }
 

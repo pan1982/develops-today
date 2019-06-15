@@ -24,11 +24,6 @@
         "globals": {
             "document": true,
             "window": true,
-            "alert": true,
-            "localStorage": true,
-            "FormData": true,
-            "FileReader": true,
-            "Blob": true,
-            "navigator": true
+            "alert": true
         }
 }

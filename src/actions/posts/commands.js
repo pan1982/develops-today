@@ -36,8 +36,8 @@ const commands = {
   },
 
   createPost: post => (dispatch) => {
-    Axios.post(`${url}/posts`, { ...post })
-      .then(() => () => getPosts(dispatch));
+    Axios.post(`${url}/posts`, { title:post.title, body: post.body })
+      .then((resp) => getPosts(dispatch, resp));
   },
 
   deletePost: postId => (dispatch) => {
