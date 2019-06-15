@@ -1,0 +1,34 @@
+{
+    "extends": ["airbnb", "prettier", "prettier/react"],
+    "rules": {
+        "class-methods-use-this": [   "error",   
+          { "exceptMethods": [ "routeHook" ] }
+        ],
+        "react/jsx-one-expression-per-line": "off",
+        "linebreak-style": "off",
+        "import/extensions": "off",
+        "import/no-unresolved": "off",
+        "react/jsx-filename-extension": "off",
+        "react/forbid-prop-types": "off",
+        "max-len": [
+          "error",
+          {
+            "ignoreStrings": true,
+            "ignoreTemplateLiterals": true,
+            "ignoreTrailingComments": true,
+            "ignoreComments": true,
+            "code": 180
+          }
+        ]
+      },
+        "globals": {
+            "document": true,
+            "window": true,
+            "alert": true,
+            "localStorage": true,
+            "FormData": true,
+            "FileReader": true,
+            "Blob": true,
+            "navigator": true
+        }
+}
